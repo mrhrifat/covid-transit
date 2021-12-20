@@ -1,8 +1,10 @@
+import Root from "./components/Root";
+
 function App() {
   return (
-    <div>
-      <h3>Bismillahir Rahmanir Rahim</h3>
-    </div>
+    <>
+      <Root />
+    </>
   );
 }
 
