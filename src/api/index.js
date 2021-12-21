@@ -65,6 +65,7 @@ export const fetchData = async () => {
             deaths,
             countries,
         }
+        //? Getting Generated 4 Data Only
 
 
     } catch (err) {
