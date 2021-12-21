@@ -10,4 +10,3 @@ export const fetchData = async () => {
         throw new Error('Fetching API Failed')
     }
 }
-console.log(process.env.REACT_APP_COVID_API_BASE_URL)
