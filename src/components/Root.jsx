@@ -11,23 +11,23 @@ class Root extends Component {
 
     async componentDidMount() {
 
-        //! 1st Way        
+        // 1st Way        
         // const data = await fetchData()
 
-        //! 2nd Way         
+        // 2nd Way         
         // const { data } = await fetchData()
         // console.log(data)
 
-        //! 3rd Way
+        // 3rd Way
         // const { modifiedData } = await fetchData()
         // console.log(modifiedData)
 
-        //! 4th Way
+        // 4th Way
         // const data = await fetchData()
         // console.log(fetchedData)
         // this.setState({ data })
 
-        //! 5th Way
+        // 5th Way
         const fetchedData = await fetchData()
         // console.log(fetchedData)
         this.setState({ data: fetchedData })
