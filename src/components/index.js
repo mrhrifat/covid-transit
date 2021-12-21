@@ -1,11 +1,13 @@
 export {
-    default as Card
+    default as Cards
 }
-from './Card/Card';
+from './Cards/Cards';
+
 export {
     default as Chart
 }
 from './Chart/Chart';
+
 export {
     default as Country
 }
