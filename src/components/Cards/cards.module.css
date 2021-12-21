@@ -1,1 +1,30 @@
-/* No CSS *//*# sourceMappingURL=cards.module.css.map */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 0;
+}
+
+.container .card {
+  margin: 0 2% !important;
+}
+
+.container .infected {
+  border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+}
+
+.container .recovered {
+  border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+}
+
+.container .deaths {
+  border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
+/*# sourceMappingURL=cards.module.css.map */
