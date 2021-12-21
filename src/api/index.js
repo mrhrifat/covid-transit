@@ -6,15 +6,15 @@ export const fetchData = async () => {
         // 1st Way
         // const response = await axios.get(process.env.REACT_APP_COVID_API_BASE_URL)
         // return response        
-        
-        
+
+
         // 2nd Way        
         // const {
         //     data
         // } = await axios.get(process.env.REACT_APP_COVID_API_BASE_URL)
         // return data
-        
-        
+
+
         // 3rd Way
         // const {
         //     data
@@ -27,8 +27,8 @@ export const fetchData = async () => {
         //     countries: data.countries
         // }
         // return modifiedData
-        
-        
+
+
         // 4th Way
         // const {
         //     data: {
@@ -47,15 +47,15 @@ export const fetchData = async () => {
         // }
         // return modifiedData
 
-        
-        
+
+
         // 5th Way
         const {
             data: {
                 confirmed,
                 recovered,
                 deaths,
-                countries
+                lastUpdate
             }
         } = await axios.get(process.env.REACT_APP_COVID_API_BASE_URL)
 
@@ -63,7 +63,7 @@ export const fetchData = async () => {
             confirmed,
             recovered,
             deaths,
-            countries,
+            lastUpdate,
         }
         //? Getting Generated 4 Data Only
 
