@@ -3,19 +3,19 @@ import axios from 'axios';
 export const fetchData = async () => {
     try {
 
-        //! 1st Way
+        // 1st Way
         // const response = await axios.get(process.env.REACT_APP_COVID_API_BASE_URL)
         // return response        
         
         
-        //! 2nd Way        
+        // 2nd Way        
         // const {
         //     data
         // } = await axios.get(process.env.REACT_APP_COVID_API_BASE_URL)
         // return data
         
         
-        //! 3rd Way
+        // 3rd Way
         // const {
         //     data
         // } = await axios.get(process.env.REACT_APP_COVID_API_BASE_URL)
@@ -29,7 +29,7 @@ export const fetchData = async () => {
         // return modifiedData
         
         
-        //! 4th Way
+        // 4th Way
         // const {
         //     data: {
         //         confirmed,
@@ -49,7 +49,7 @@ export const fetchData = async () => {
 
         
         
-        //! 5th Way
+        // 5th Way
         const {
             data: {
                 confirmed,
