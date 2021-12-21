@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card, Chart, Country } from './'
+import { Cards, Chart, Country } from './'
 import { fetchData } from '../api'
 import styles from './root.module.css'
 
@@ -39,7 +39,7 @@ class Root extends Component {
         // console.log(data)
         return (
             <div className={styles.container}>
-                <Card data={data} />
+                <Cards data={data} />
                 <Country />
                 <Chart />
             </div>
