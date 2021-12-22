@@ -93,7 +93,22 @@ export const fetchDailyData = async () => {
     }
 }
 
-export const countries = async () => {
-    const response = await axios.get(`${process.env.REACT_APP_COVID_API_BASE_URL}/countries`)
-    console.log(response)
+export const fetchCountries = async () => {
+    // const response = await axios.get(`${process.env.REACT_APP_COVID_API_BASE_URL}/countries`)
+    // console.log(response)
+
+    // const {
+    //     data: {
+    //         countries
+    //     }
+    // } = await axios.get(`${process.env.REACT_APP_COVID_API_BASE_URL}/countries`)
+    // return countries
+
+    const {
+        data: {
+            countries
+        }
+    } = await axios.get(`${process.env.REACT_APP_COVID_API_BASE_URL}/countries`)
+    return countries.map(country => country.name)
+
 }
