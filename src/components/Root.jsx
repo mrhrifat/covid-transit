@@ -51,13 +51,13 @@ class Root extends Component {
 
     render() {
         // console.log(this.state.data)
-        const { data } = this.state
+        const { data, country } = this.state
         // console.log(data)
         return (
             <div className={styles.container}>
                 <Cards data={data} />
                 <Country handleChangeCountry={this.handleChangeCountry} />
-                <Chart />
+                <Chart data={data} country={country} />
             </div>
         )
     }
