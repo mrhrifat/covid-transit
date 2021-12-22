@@ -15,7 +15,7 @@ const Country = () => {
         fetchingCountries()
     }, [setFetchedCountries])
 
-    console.log(fetchedCountries)
+    // console.log(fetchedCountries)
     // console.log(fetchedCountries[0].name)
 
     return (
@@ -23,9 +23,9 @@ const Country = () => {
             <FormControl className={styles.formControl}>
                 <NativeSelect>
                     <option value="global">Global</option>
-                    {fetchedCountries && fetchedCountries.map(country => (
+                    {fetchedCountries && fetchedCountries.map((country,i) => (
                         <option
-                            key={country}
+                            key={i}
                             value={country}
                         >
                             {country}
