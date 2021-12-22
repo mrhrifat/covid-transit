@@ -73,3 +73,22 @@ export const fetchData = async () => {
         throw new Error('Fetching API Failed')
     }
 }
+
+export const fetchDailyData = async () => {
+    try {
+        const {
+            data
+        } = await axios.get(`${process.env.REACT_APP_COVID_API_BASE_URL}/daily`)
+
+        const modifiedData = data.map((dailyData) => ({
+            confirmed: dailyData.confirmed.total,
+            deaths: dailyData.deaths.total,
+            date: dailyData.reportDate
+        }))
+
+        return modifiedData
+
+    } catch (error) {
+        throw new Error('Fething Daily Summary Failed')
+    }
+}
