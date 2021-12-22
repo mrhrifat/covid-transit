@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=chart.module.css.map */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 85%;
+}
+
+@media only screen and (max-width: 770px) {
+  .container {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=chart.module.css.map */
