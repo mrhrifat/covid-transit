@@ -92,3 +92,8 @@ export const fetchDailyData = async () => {
         throw new Error('Fething Daily Summary Failed')
     }
 }
+
+export const countries = async () => {
+    const response = await axios.get(`${process.env.REACT_APP_COVID_API_BASE_URL}/countries`)
+    console.log(response)
+}
