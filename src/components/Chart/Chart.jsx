@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { LinearProgress } from '@material-ui/core'
+import { CircularProgress } from '@material-ui/core'
 import { Line, Bar } from 'react-chartjs-2'
 import { fetchDailyData } from '../../api'
 import classNames from 'classnames'
@@ -111,8 +111,9 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
                     }}
                 />
             )
-            : null
-        // <LinearProgress />
+            :
+            // null
+            <CircularProgress />
     )
 
     // console.log(confirmed, recovered, deaths)
@@ -139,8 +140,12 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
                     }}
                 />
             )
-            : null
+            :
+            // null
+            <CircularProgress />
     )
+
+    if (!lineChart) return <CircularProgress />
 
     return (
         <div className={styles.container}>
