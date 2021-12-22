@@ -39,7 +39,7 @@ const Chart = () => {
             setDailyData(getDailyData)
         }
 
-        console.log(dailyData)
+        // console.log(dailyData)
 
         dailySummary()
     }, [])
