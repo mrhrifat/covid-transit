@@ -2715,6 +2715,11 @@ char-regex@^2.0.0:
   resolved "https://registry.yarnpkg.com/char-regex/-/char-regex-2.0.0.tgz#16f98f3f874edceddd300fda5d58df380a7641a6"
   integrity sha512-oGu2QekBMXgyQNWPDRQ001bjvDnZe4/zBTz37TMbiKz1NbNiyiH5hRkobe7npRN6GfbGbxMYFck/vQ1r9c1VMA==
 
+chart.js@^3.6.2:
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-3.6.2.tgz#47342c551f688ffdda2cd53b534cb7e461ecec33"
+  integrity sha512-Xz7f/fgtVltfQYWq0zL1Xbv7N2inpG+B54p3D5FSvpCdy3sM+oZhbqa42eNuYXltaVvajgX5UpKCU2GeeJIgxg==
+
 check-types@^11.1.1:
   version "11.1.2"
   resolved "https://registry.yarnpkg.com/check-types/-/check-types-11.1.2.tgz#86a7c12bf5539f6324eb0e70ca8896c0e38f3e2f"
