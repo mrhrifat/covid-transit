@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { CircularProgress } from '@material-ui/core'
 import { Line, Bar } from 'react-chartjs-2'
 import { fetchDailyData } from '../../api'
-import classNames from 'classnames'
 import styles from './chart.module.css'
 
 
