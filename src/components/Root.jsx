@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Cards, Chart, Country } from './'
 import { fetchData } from '../api'
 import styles from './root.module.css'
-import covidImage from '../image/image.png'
+import covidImage from '../images/image.png'
 
 class Root extends Component {
 
