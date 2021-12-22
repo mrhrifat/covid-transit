@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Cards, Chart, Country } from './'
 import { fetchData } from '../api'
 import styles from './root.module.css'
+import covidImage from '../image/image.png'
 
 class Root extends Component {
 
@@ -55,6 +56,7 @@ class Root extends Component {
         // console.log(data)
         return (
             <div className={styles.container}>
+                <img src={covidImage} className={styles.iamge} alt='Covid-19' />
                 <Cards data={data} />
                 <Country handleChangeCountry={this.handleChangeCountry} />
                 <Chart data={data} country={country} />
