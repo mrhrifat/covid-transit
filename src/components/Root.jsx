@@ -6,32 +6,48 @@ import styles from './root.module.css'
 class Root extends Component {
 
     state = {
-        data: {}
+        data: {},
+        country: ''
     }
 
+    // async componentDidMount() {
+
+    //     // 1st Way        
+    //     // const data = await fetchData()
+
+    //     // 2nd Way         
+    //     // const { data } = await fetchData()
+    //     // console.log(data)
+
+    //     // 3rd Way
+    //     // const { modifiedData } = await fetchData()
+    //     // console.log(modifiedData)
+
+    //     // 4th Way
+    //     // const data = await fetchData()
+    //     // console.log(fetchedData)
+    //     // this.setState({ data })
+
+    //     // 5th Way
+    //     const fetchedData = await fetchData()
+    //     // console.log(fetchedData)
+    //     this.setState({ data: fetchedData })
+    // }
+
     async componentDidMount() {
-
-        // 1st Way        
-        // const data = await fetchData()
-
-        // 2nd Way         
-        // const { data } = await fetchData()
-        // console.log(data)
-
-        // 3rd Way
-        // const { modifiedData } = await fetchData()
-        // console.log(modifiedData)
-
-        // 4th Way
-        // const data = await fetchData()
-        // console.log(fetchedData)
-        // this.setState({ data })
-
-        // 5th Way
         const fetchedData = await fetchData()
         // console.log(fetchedData)
         this.setState({ data: fetchedData })
     }
+
+    handleChangeCountry = async (country) => {
+        const fetchedData = await fetchData(country)
+        // console.log(fetchedData)
+        // console.log(country)
+        this.setState({ data: fetchedData, country: country })
+    }
+
+
 
     render() {
         // console.log(this.state.data)
@@ -40,7 +56,7 @@ class Root extends Component {
         return (
             <div className={styles.container}>
                 <Cards data={data} />
-                <Country />
+                <Country handleChangeCountry={this.handleChangeCountry} />
                 <Chart />
             </div>
         )
