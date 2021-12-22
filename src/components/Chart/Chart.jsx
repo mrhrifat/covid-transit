@@ -6,6 +6,56 @@ import classNames from 'classnames'
 import styles from './chart.module.css'
 
 
+// // Bar Chart
+// import { Chart, registerables } from 'chart.js'
+// Chart.register(...registerables)
+
+// // Line Chart
+// import {
+//     Chart as ChartJS,
+//     CategoryScale,
+//     LinearScale,
+//     PointElement,
+//     LineElement,
+//     Title,
+//     Tooltip,
+//     Legend,
+// } from 'chart.js'
+
+// ChartJS.register(
+//     CategoryScale,
+//     LinearScale,
+//     PointElement,
+//     LineElement,
+//     Title,
+//     Tooltip,
+//     Legend,
+// )
+
+
+// // Bar & Line Chart
+// import {
+//     Chart as ChartJS,
+//     // CategoryScale,
+//     // LinearScale,
+//     // PointElement,
+//     // LineElement,
+//     // Title,
+//     // Tooltip,
+//     // Legend,
+//     registerables
+// } from 'chart.js'
+
+// ChartJS.register(
+//     // CategoryScale,
+//     // LinearScale,
+//     // PointElement,
+//     // LineElement,
+//     // Title,
+//     // Tooltip,
+//     // Legend,
+//     ...registerables
+// )
 
 // Bar & Line Chart
 import {
