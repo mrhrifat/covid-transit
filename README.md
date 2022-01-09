@@ -18,8 +18,8 @@ Covid Transit is a web application that allows users to track current and histor
 - View Here
     <details>
         <summary>Click to expand</summary>
-            <img src="https://i.ibb.co/3WqCsMd/Covid-Transit01.png" alt="Covid-Transit02" border="0">
-            <img src="https://i.ibb.co/BcWtXcF/Covid-Transit02.png" alt="Covid-Transit01" border="0">
+            <img src="https://i.ibb.co/BcWtXcF/Covid-Transit01.png" alt="Covid-Transit01" border="0">
+            <img src="https://i.ibb.co/3WqCsMd/Covid-Transit02.png" alt="Covid-Transit02" border="0">
     </details>
 
 ## How To Use
