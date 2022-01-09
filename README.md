@@ -22,3 +22,8 @@ Covid Transit is a web application that allows users to track current and histor
             <img src="https://i.ibb.co/BcWtXcF/Covid-Transit01.png" alt="Covid-Transit01" border="0">
     </details>
 
+## How To Use
+- Go to [Covid Transit](https://covidtransit.netlify.app)
+- See Global cases & individual country cases in Cards, Line & Bar Chart.
+- See the data of your own or other country
+
